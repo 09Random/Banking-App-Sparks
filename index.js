@@ -1,7 +1,4 @@
 'use strict';
-
-let selctedI=3;
-
 // UI functioning************************************************************************************
 
 // functioning of mobile nav btn
@@ -37,7 +34,6 @@ p1AccountEl.addEventListener('click',function(){
     p1AccountEl.classList.add('selected-person');
     selectedPersonEl=p1AccountEl;
 
-    selectedI=0;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -54,7 +50,6 @@ p2AccountEl.addEventListener('click',function(){
     p2AccountEl.classList.add('selected-person');
     selectedPersonEl=p2AccountEl;
 
-    selctedI=1;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -70,7 +65,6 @@ p3AccountEl.addEventListener('click',function(){
     p3AccountEl.classList.add('selected-person');
     selectedPersonEl=p3AccountEl;
 
-    selectedI=2;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -86,7 +80,6 @@ p4AccountEl.addEventListener('click',function(){
     p4AccountEl.classList.add('selected-person');
     selectedPersonEl=p4AccountEl;
 
-    selctedI=3;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -102,7 +95,6 @@ p5AccountEl.addEventListener('click',function(){
     p5AccountEl.classList.add('selected-person');
     selectedPersonEl=p5AccountEl;
 
-    selctedI=4;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -118,7 +110,6 @@ p6AccountEl.addEventListener('click',function(){
     p6AccountEl.classList.add('selected-person');
     selectedPersonEl=p6AccountEl;
 
-    selctedI=5;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -134,7 +125,6 @@ p7AccountEl.addEventListener('click',function(){
     p7AccountEl.classList.add('selected-person');
     selectedPersonEl=p7AccountEl;
 
-    selctedI=6;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -150,7 +140,6 @@ p8AccountEl.addEventListener('click',function(){
     p8AccountEl.classList.add('selected-person');
     selectedPersonEl=p8AccountEl;
 
-    selctedI=7;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -166,7 +155,6 @@ p9AccountEl.addEventListener('click',function(){
     p9AccountEl.classList.add('selected-person');
     selectedPersonEl=p9AccountEl;
 
-    selctedI=8;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
@@ -182,7 +170,6 @@ p10AccountEl.addEventListener('click',function(){
     p10AccountEl.classList.add('selected-person')
     selectedPersonEl=p10AccountEl;
     
-    selectedI=9;
     //Displaying the selected person on the detailed person info
     let detailedNameTBA=document.querySelector(".selected-person .name");
     let detailedAmountTBA=document.querySelector(".selected-person .amount");
