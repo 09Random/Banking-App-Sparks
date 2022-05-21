@@ -45,6 +45,8 @@ const wAmount3TBA=document.querySelector('.wAmount3TBA');
 const wAmount4TBA=document.querySelector('.wAmount4TBA');
 const wAmount5TBA=document.querySelector('.wAmount5TBA');
 
+const detailImg=document.querySelector('.person-detail-img')
+
 p1AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
     p1AccountEl.classList.add('selected-person');
@@ -92,6 +94,7 @@ wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
 
+detailImg.src="Images/gill bates.jpg";
     
 })
 p2AccountEl.addEventListener('click',function(){
@@ -141,6 +144,8 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+
+detailImg.src="Images/rowanatkinson.jpg";
 
 })
 p3AccountEl.addEventListener('click',function(){
@@ -192,6 +197,8 @@ wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
 
+detailImg.src="Images/elonmusk.jpg";
+
 })
 p4AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
@@ -240,6 +247,8 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+
+detailImg.src="Images/billnye.jpg";
 })
 p5AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
@@ -289,6 +298,7 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+detailImg.src="Images/rick.jpg";
 })
 p6AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
@@ -338,6 +348,7 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+detailImg.src="Images/robpat.jpg";
 })
 p7AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
@@ -387,6 +398,7 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+detailImg.src="Images/felix.jpg";
 
 })
 p8AccountEl.addEventListener('click',function(){
@@ -437,6 +449,7 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
+detailImg.src="Images/sean.jpg";
 
 })
 p9AccountEl.addEventListener('click',function(){
@@ -487,7 +500,7 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
-
+detailImg.src="Images/henrycavil.jpg";
 })
 p10AccountEl.addEventListener('click',function(){
     selectedPersonEl.classList.remove('selected-person');
@@ -537,6 +550,6 @@ wAmount2TBA.textContent=amount2.textContent;
 wAmount3TBA.textContent=amount3.textContent;
 wAmount4TBA.textContent=amount4.textContent;
 wAmount5TBA.textContent=amount5.textContent;
-
+detailImg.src="Images/thomas.jpg";
 })
 
