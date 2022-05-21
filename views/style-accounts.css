@@ -312,3 +312,6 @@ table{
 .email,.acid{
     display: none;
 }
+.hide{
+    display: none;
+}
