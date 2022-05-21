@@ -49,7 +49,7 @@ const User=mongoose.model('account',userSchema);
 app.use(express.static(__dirname));
 app.get("/", (req,res)=>{
     res.render('home',{
-        myName:"BlahBlahblahblah"
+        myName:"test-2"
     })
 })
 app.get("/accounts", (req,res)=>{
@@ -62,22 +62,37 @@ app.get("/accounts", (req,res)=>{
 })
 app.get("/transfer", (req,res)=>{
     res.render('transfer',{
-        myName:"BlahBlahblahblah"
+        myName:"test"
     })
 })
 
 app.post("/transfer",(req,res)=>{
-    console.log(req.body)
+    // console.log(req.body)
     const {sender:sender,receiver:receiver,amount:amount}=req.body;
-    User.find({$or:[{name:sender , name:receiver}]},function(err,senderReciver){
-        console.log(senderReciver);
-        const balanceReceiver= senderReciver[0].balance;
-        console.log(balanceReceiver);
+    User.find({name:sender},function(err,Sender){
+        User.find({name:receiver},function(err,Receiver){
+            if(Sender.length!==1||Receiver.length!==1){
+                console.log('Invalid person!Check spelling.');
+            }else{
+                if(Sender[0].balance<amount){
+                    console.log('Insufficient Funds! Try a smaller amount.')
+                }else{
+                    Sender[0].recentTransfers=[{sender:sender,receiver:receiver,amount:amount},...Sender[0].recentTransfers]
+                    Receiver[0].recentTransfers=[{sender:sender,receiver:receiver,amount:amount},...Receiver[0].recentTransfers]
+                    Sender[0].balance-=amount;
+                    Receiver[0].balance+=Number(amount);
+                    Sender[0].save();
+                    Receiver[0].save();
+                    console.log(`Transfer of ${amount} from ${sender} to ${receiver} successful!`)
+                }
+            }
+        })
+        
+    }) 
+    res.render('transfer',{
+        
     })
     
-    res.render('transfer',{
-
-    })
 })
 app.listen(port, ()=>{
     console.log(`listening to port ${port}`);
